@@ -10,11 +10,11 @@ document.getElementById("square").addEventListener('mouseup', function(){
 document.getElementById("square").addEventListener('dblclick', function(){
     this.style.backgroundColor ="green"
 })
-document.addEventListener('wheel', function(){
+document.addEventListener('wheel', () => {
     document.getElementById("square").style.backgroundColor = "orange"
 })
 
-document.addEventListener('keyup', (event) => {
+document.addEventListener('keyup', function(event) {
     if (event.key == 'r') {
         document.getElementById("square").style.backgroundColor = "red"
     }
