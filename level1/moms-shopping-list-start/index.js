@@ -4,7 +4,9 @@ form.addEventListener("submit", function(event){
     event.preventDefault()
 
     const title = form.title.value
+    console.log(title)
     const listItem = document.createElement('li')
+    console.log("List item created")
     form.title.value = ""
     listItem.textContent = title  
     
