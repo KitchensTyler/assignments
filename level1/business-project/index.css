@@ -1,0 +1,151 @@
+body {
+    background-color: rgb(11, 140, 253);
+}
+a {
+    text-decoration:rgb(226, 12, 12);
+}
+#h1 {
+    text-align: center;
+    font-size: 40px;
+    display: inline-block;
+    align-items: left;
+    margin: 10px;
+    color: rgb(172, 49, 49);
+}
+#h2 {
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+    align-items: left;
+    margin: 0 0 30px 0;
+    color: rgb(24, 228, 17);
+}
+#btn{
+    display: inline-block;
+}
+#search {
+    display: inline-block;
+    align-items: flex-end;
+    justify-content: right;
+}
+#topMenu {
+    display: flex;
+    color: rgb(67, 220, 20);
+    border: 2px solid rgb(92, 31, 30);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-decoration-color: green;
+}
+.bodyContent{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    grid-template-rows: repeat(4,2fr);
+}
+#content1 {
+    border: 2px solid black;
+    grid-column:1/1;
+    grid-row: 1/130;
+}
+#c1p1 {
+    text-align: center;
+    font-family:cursive;
+    color: rgb(192, 14, 14);
+}
+#c2p1{
+    text-align: center;
+    font-size: larger;
+}
+#potpie {
+    height: 10rem;
+    width:10rem;
+}
+#roast{
+    height: 8rem;
+    width:10rem;
+}
+#content2 {
+    border: 2px solid black;
+    grid-column:2/10;
+    grid-row: 1/7;
+}
+#content3 {
+    border: 2px solid black;
+    grid-column:8/10;
+    grid-row: 7/130;
+    background-color:rgb(250, 229, 111)
+}
+#c3p1 {
+    text-align: center;
+    font-family: cursive;
+}
+#john1{
+    height: 8rem;
+    width:8rem;
+}
+#john2{
+    height: 6rem;
+    width:8rem;
+}
+#john3{
+    height: 7rem;
+    width:8.5rem;
+}
+#john4{
+    height: 8rem;
+    width:8rem;
+}
+#content4 {
+    border: 2px solid black;
+    grid-column:2/8;
+    grid-row: 7/130;
+}
+#c4h1 {
+    text-align: center;
+}
+#c4p1 {
+    text-align: center;
+    margin: 0 40px 0 40px;
+    font-family: sans-serif;
+}
+#content5 {
+    border: 2px solid black;
+    grid-column:1/10;
+    grid-row: 130/140;
+    display: flex;
+    justify-content: space-evenly;
+    ;
+}
+#aboutUs {
+    text-align: center;
+    font-family:cursive;
+    color: rgb(192, 14, 14);
+}
+#help {
+    text-align: center;
+    font-family:cursive;
+    color: rgb(192, 14, 14);
+}
+#services {
+    text-align: center;
+    font-family:cursive;
+    color: rgb(192, 14, 14);
+}
+#info {
+    text-align: center;
+    font-family:cursive;
+    color: rgb(192, 14, 14);
+}
+@media only screen and (max-width:700px){
+    #c4p1 {
+        text-align: center;
+        margin: 0 40px 0 40px;
+        font-family: cursive;
+        width:70%;
+        color: blue;
+    }
+}
