@@ -11,4 +11,6 @@ function foreception(people, alphabet){
     }
     return newArr
 }
-console.log(foreception(people, alphabet))
+// console.log(foreception(people, alphabet))
+
+console.log(newArr)

@@ -1,0 +1,32 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(6, 10rem);
+    grid-template-rows: repeat(10, 6rem);
+}
+
+#count {
+    display: grid;
+    grid-template-columns: repeat(6, 10rem);
+    grid-template-rows: repeat(10, 6rem);
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+#output {
+    grid-row: 2/2;
+    grid-column: 1/4;
+}
+
+#btn {
+    grid-row: 3/3;
+    grid-column: 1/4;
+} 
+
+#timer {
+    font-size: 50px;
+}
+
+#refresh {
+     grid-row: 5/5;
+     grid-column: 1/4;
+}

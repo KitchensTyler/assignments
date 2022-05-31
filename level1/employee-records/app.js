@@ -5,9 +5,9 @@ this.name = name
 this.job = job
 this.salary = salary
 this.status = status 
-// this.printEmployeeForm = function(){
-//     console.log(this. name + this. job + this. salary + this. status)
-// }
+this.printEmployeeForm = function(){
+    console.log(this. name + this. job + this. salary + this. status)
+}
 }
 
 

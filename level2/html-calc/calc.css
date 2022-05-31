@@ -1,0 +1,76 @@
+body {
+    background-color: aliceblue;
+}
+#all {
+    display: grid;
+    grid-template-rows: repeat(8, 5fr);
+    grid-template-columns: repeat(11, 1fr);
+    gap: 8px;
+}
+#add {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 5/20;
+    text-align: center;
+    border-color: rgb(32, 0, 177);
+    border-width: 1rem;
+    padding:5px;
+    border-style: solid;
+}
+#add2 {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/20;
+    text-align: center;
+    border-color: rgb(87, 71, 158);
+    border-width: 1rem;
+    padding:5px;
+    border-style: solid;
+}
+#sub {
+    display: grid;
+    grid-column: 5/8;
+    grid-row:5/20;
+    text-align: center;
+    border-color: rgb(177, 0, 53);
+    border-width: 1rem;
+    border-style: solid;
+    padding:5px;
+}
+#sub2 {
+    display: grid;
+    grid-column: 1/8;
+    grid-row:1/20;
+    text-align: center;
+    border-color: rgb(179, 65, 99);
+    border-width: 1rem;
+    border-style: solid;
+    padding:5px;
+}
+#mult {
+    display: grid;
+    grid-column: 9/12;
+    grid-row: 5/20;
+    text-align: center;
+    border-color: rgb(82, 184, 99);
+    border-width: 1rem;
+    border-style: solid;
+    padding:5px;
+}
+#mult2 {
+    display: grid;
+    grid-column: 1/12;
+    grid-row: 1/20;
+    text-align: center;
+    border-color: rgb(137, 177, 144);
+    border-width: 1rem;
+    border-style: solid;
+    padding:5px;
+}
+#listItems{
+    display: flex;
+    justify-content: space-between;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    font-size: larger;
+}

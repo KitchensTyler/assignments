@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly TK Air</title>
+</head>
+<body>
+    <div id="formDiv">
+        <form id="flight">
+            <input name="firstName" type="text" placeholder="First Name"/> <br>
+            <input name="lastName" type="text" placeholder="Last Name"/><br><br>
+            <input name="age" type="number" placeholder="Age"/><br><br>
+            Male <input name="gender" type="radio" value="Male"/><br>
+            Female <input name="gender" type="radio" value="Female"/><br>
+            <br>
+            Location Traveling To: <select id="location">
+            <option> </option>
+            <option>Tampa, Florida</option>
+            <option>New Orleans, Louisiana</option>
+            <option>New York City, New York</option>
+            <option>Tatooine</option>
+            </select><br><br>
+            Dietary Needs: <br>
+            <div id="diet">
+            Vegetarian:<input name="diet" type="checkbox">
+            &nbsp;Vegan:<input name="diet" type="checkbox" value="Vegan" value="Vegan">
+            &nbsp;Lactose Intolerant:<input name="diet" type="checkbox" value="Lactose Intolerant">
+            &nbsp;Gluten Sensitivity:<input name="diet" type="checkbox" value="Gluten Sensitivity">
+            &nbsp;Jedi:<input name="diet" type="checkbox" value="Jedi"><br><br><br>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

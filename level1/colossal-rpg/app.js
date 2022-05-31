@@ -27,7 +27,7 @@ let tarnished = {
     'atk':10, 
     'crt':6, 
     'def':1,
-    'hit':1,
+    'hit':2,
     'inventory': inventory
 }
 
@@ -175,7 +175,7 @@ function spear(){
     console.clear()
     tarnished.atk = tarnished.atk + 10
     tarnished.def = tarnished.def + 10
-    tarnished.hit = tarnished.hit - 2
+    tarnished.hit = tarnished.hit + 2
     readline.keyInPause(newItem + `'Spear: Long stick with a sharp metal end, perfect for use with a greatshield. Does Pierce Damage`)
     inventory.push("Spear")
 }
@@ -442,5 +442,4 @@ function victory(){
 
 while (tarnished.hp > 0 && defeated !== true){
     console.clear()
-    walk()
-}
+    walk()}

@@ -1,0 +1,57 @@
+{
+    "menu": [{
+        "Appetizers": {
+            "Rock Shrimp": {
+                "ingredients" : ["shrimp", "spicy honey sauce"],
+                "description" : "Spicy. Crsipy shrimp tossed in a spicy honey sauce."
+            }, 
+            "Harumaki" : {
+                "ingredients" :["cabbage", "spring onions", "carrots"],
+                "description" : "Fried veggie spring rolls"
+            }
+        },
+        "Cold sandwiches": {
+        "Tuna Salad" : {
+            "ingredients" : ["Albacore tuna", "white bread"],
+            "description" : "about ten ounces of mathwatering albacore only"
+        }, 
+        "Cherry wood baked ham" : {
+            "ingredients" : ["Cherry wood smoked ham", "bacon", "white bread", "mustard"],
+            "description" : "about 10 ounces of mouthwatering fillings "
+        }
+    },
+     "Hot sandwiches": {
+        "fresh grilled chicken breast sammy": {
+            "ingredients": ["lettuce", "tomato", "toasted white bun", "chicken breast", "mayo"],
+            "description": "fresh off the grill chicken smothered with veggies and our special sauce. "
+        }, 
+        "Grilled corn beef & swiss": {
+            "ingredients" : ["cornbeef", "swiss cheese", "mustard", "rye bread", "cabbage"],
+            "description" : "a hot corn beef sanwhich filled with flavor "
+        }
+    },
+     "Drinks" : {
+        "Arnold Palmer" : {
+            "ingredients" : ["lemonade", "sweet tea"],
+            "Decsription" : "Freshly brewed tart Lemonade mixed with perfectly brewed sweet tea"
+        }, 
+        "Strawberry Lemonade": {
+            "ingredients" : ["Lemonade", "Stawberries"],
+            "description" : "Freshly brewed lemonade mixed with frsh picked starberries"
+
+        }
+    } ,
+     "Desert" : {
+        "Root Beer Float" : {
+            "ingredients" : ["Root Beer", "Vanilla Bean Ice Cream"],
+            "Description" : "A Classic Root Beer float"
+        }, 
+        "Lemon Cake" : {
+            "ingredients": ["Vanilla Sponge Cake", "Cream Cheese and lemon frosting", "Blueberry Puree"], 
+            "Description" : "A lemon cake served with a blueberry puree"
+                    }   
+              }
+      }]
+}
+
+ 

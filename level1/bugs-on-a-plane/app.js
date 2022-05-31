@@ -1,11 +1,13 @@
 const form = document.querySelector("#airline-form");
 var submit = document.querySelector("#submit");
 // var query = document.querySelector;
-
+console.log(form)
 
 function formAlert() {
-    var firstName = form.elements["firstName"].value;
-    var lastName = form.elements["lastName"].value;
+    console.log("form alert was called")
+    var firstName = form.elements["first-name"].value;
+    console.log(firstName)
+    var lastName = form.elements["last-name"].value;
     var age = form.elements["age"].value;
     var gender = form.elements["gender"].value;
     var location = form.elements["travelLocation"].value;
@@ -19,7 +21,7 @@ function formAlert() {
     if (form.elements['paleo'].checked) {
         diet.push(document.getElementById('paleo').value);
     }
-
+console.log(firstName)
     // submit.addEventListener("onclick", function(e){
     //     alert()
     // });
@@ -29,6 +31,8 @@ function formAlert() {
 
 
 
-submit.addEventListener("click", function(e){
-    alert()
+form.addEventListener("submit", function(e){
+    e.preventDefault() 
+    console.log('form was submitted')
+    formAlert()
 });

@@ -19,14 +19,14 @@
 //     }
 // }
 
-// const numbers = []
-// numbers.push(1,2,3,4,5,6,7,8,9)
-// console.log(numbers)
+const numbers = []
+numbers.push(1,2,3,4,5,6,7,8,9)
+console.log(numbers)
 
 
-// const fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
-// for (var i = 0; i < fruit.length; i++){
-//         console.log(i)
+const fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
+for (var i = 0; i < fruit.length; i++){
+        console.log(i)
 //     }
     const fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
     var everyOtherFruit= []
