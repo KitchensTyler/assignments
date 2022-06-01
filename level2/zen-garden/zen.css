@@ -4,7 +4,7 @@ a, a:visited, a:active, a:link {
     color: inherit;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-rows: repeat(46, 69px);
     grid-template-columns: repeat(14, 4fr);
@@ -74,6 +74,7 @@ right:0; */
     transition-duration: .5s;
 }
 
+
 #oneAChild{
     grid-column: 3/14;
     grid-row: 2/-1;
@@ -83,6 +84,7 @@ right:0; */
 }
 #oneAChildBig{
     font-size: 27px;
+
 }
 
 
@@ -131,6 +133,7 @@ right:0; */
     background-color: rgb(175, 175, 175);
     opacity: .6;
     transition-duration: .8s;
+
 }
 
 
@@ -211,6 +214,7 @@ right:0; */
     color: rgb(38, 134, 38);
     transition-duration: .4s;
 }
+
 
 #topAuthor{
     border-bottom: solid rgb(187, 187, 187) 1px;
@@ -348,7 +352,7 @@ right:0; */
     color: rgb(65, 139, 116);
     transition-duration: .7s;
 }
-​
+
 #linkTwo{
     border-bottom: solid rgb(187, 187, 187) 1px;
     opacity: .8;
@@ -453,7 +457,7 @@ right:0; */
     letter-spacing: 1px;
 }
 
-#footerItalics{
+/* #footerItalics{
     font-style: italic;
     color: rgba(240, 248, 255, 0.603);
     opacity: .85;
@@ -469,13 +473,79 @@ right:0; */
 } */
 
 
-.footer {
+/* .footer {
     grid-row: 44/-1;
     grid-column: 1/-1;
     background-color: #134347;
+} */ */
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    fill: #e6f5eb;
+    color: #89a1a3;
 }
 
+.icons > div {
+    width: 100px;
+    height: 100px;
+    filter: invert(99%) sepia(4%) saturate(180%) hue-rotate(256deg) brightness(115%) contrast(94%);
+    border-radius: 0%;
+    transform: scale(.65);
+}
 
+#icon1 {
+    background: url('html.png');
+    background-repeat: no-repeat;
+    transition-duration: 250ms;
+}
+
+#icon1:hover {
+    filter: invert(.6);
+}
+
+#icon2 {
+    background: url('css.png');
+    background-repeat: no-repeat;
+    transition-duration: 250ms;
+}
+
+#icon2:hover {
+    filter: invert(.6);
+}
+
+#icon3 {
+    background: url('CC.png');
+    background-repeat: no-repeat;
+    transition-duration: 250ms;
+}
+
+#icon3:hover {
+    filter: invert(.6);
+}
+
+#icon4 {
+    background: url('wheel2.png');
+    background-repeat: no-repeat;
+    transition-duration: 250ms;
+}
+
+#icon4:hover {
+    filter: invert(.6);
+}
+
+#icon5 {
+    background: url('github.png');
+    background-repeat: no-repeat;
+    transition-duration: 250ms;
+}
+
+#icon5:hover {
+    filter: invert(.6);
+}
 
 /* @media (max-width: 900px){
     /* use this media query to help these two cells drop to the bottom when screens are smaller */
@@ -506,4 +576,4 @@ right:0; */
     height: 30px;
     background-color: black;
     border-radius: 50%;
-} */ 
+} *

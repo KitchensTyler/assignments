@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(71, 233, 171);
+}
+#header{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    transform: scale(3, 2);
+    
+}
+
+#todoForm {
+    text-align: center;
+    margin-top: 80px;
+}
+
+input {
+    border-radius: 30px;
+    background-color: rgb(255, 241, 241);
+}
+
+#submitBtn {
+    border-radius: 12px;
+    background-color: rgb(162, 199, 231);
+}
+
+#todoList {
+    text-align: center;
+    margin-top: 3rem;
+}
