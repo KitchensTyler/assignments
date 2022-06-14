@@ -1,0 +1,98 @@
+.backdrop {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -155px;
+  width:100%;
+  height: 33rem;
+}
+
+
+.App {
+  display: flex;
+  flex-direction:column;
+  zoom:70%;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  font-size: 32px;
+  color: aliceblue;
+  margin-top: 44px;
+  justify-content: space-around;
+  
+}
+
+.homeLinks{
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 32rem;
+  margin-left: 15rem;
+}
+
+.CleanBlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+  color: aliceblue;
+  margin-top: 12rem;
+  line-height: 1px;
+}
+
+.cleanText {
+  font-size: 110px;
+}
+
+/* .rightSideNav {
+  display: flex;
+  order: 4;
+  height: 20px;
+  width: 400px;
+  font-size: 20px;
+  color: aliceblue;
+  margin-top: 48px;
+  justify-content: space-between;
+  
+} */
+
+.card {
+  align-items: left;
+  max-width: 38pc;
+}
+
+.card > h1 {
+  font-size: 40px;
+  line-height: 3rem;
+}
+
+.cardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 14rem;
+  line-height: 25px;
+  align-items: center;
+}
+.button {
+  display: flex;
+  margin-top: 14rem;
+  line-height: 25px;
+  align-items: right;
+}
+.PostsButton {
+  height: 3rem;
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0;
+  background-color:rgb(20, 74, 89);
+  color: white;
+  font-size: 14px;
+  border-color: rgb(20, 74, 89);
+}

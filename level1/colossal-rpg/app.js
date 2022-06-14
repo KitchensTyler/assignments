@@ -237,7 +237,7 @@ function walk(){
     if (encounters === 3 && said !== true){
         leyndell()
     }
-    let chance = Math.floor((Math.random()*3)+1)
+    let chance = Math.floor((Math.random()*2)+1)
     switch(chance){
         case 1:
             encounter()
@@ -384,9 +384,9 @@ function attack(){
 }
 
 function runAway(){
-    let chance = Math.floor((Math.random()*7)+1)
+    let chance = Math.floor((Math.random()*2)+1)
     while(engage === 'r'){
-        if (chance === 1){
+        if (chance !== 1){
             tarnished.hp = tarnished.hp - foeAtk
             engage = 'a'
             engage = readline.keyIn(`You attempt to run but ` + foeName +  ` attacks dealing ` + foeAtk + ' points of damage to you.'+ `Your current HP is ` + tarnished.hp + ` and the ` + foeName + `'s current HP is ` + foeHP + `. (a) Attack or (r)Run? `,{limit:'$<a,r>'})
