@@ -1,0 +1,77 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 60rem;
+    width: 50%;
+    border: solid rgb(74, 201, 146) 3px;
+    margin:auto;
+    grid-template-columns: repeat(17, 3rem);
+    grid-template-rows: repeat(15, 4rem);
+    background-image: url("https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80");
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color:rgb(32, 0, 149);
+    height: 5px;
+    align-items: center;
+}
+.squareParent{
+    display: flex;
+    flex-direction: column;
+    height:200%;
+}
+.squareDiv1{
+    display:flex;
+    height:200%;
+    width:100%;
+}
+
+.square1 {
+    height:90%;
+    width:50%;
+    border: solid rgb(184, 61, 61) 2px;
+    margin:5px;
+}
+
+.square2 {
+    border: solid rgb(64, 83, 175) 2px;
+    height:90%;
+    width:50%;
+    margin:5px;
+}
+.squareDiv2{
+    display: flex;
+    height:200%;
+    width:100%;
+}
+
+.square3 {
+    border: solid rgb(164, 66, 182) 2px;
+    height:90%;
+    width:50%;
+    margin:5px;
+}
+
+.square4 {
+    border: solid rgb(77, 220, 64) 2px;
+    height:90%;
+    width:50%;
+    margin:5px;
+}
+
+.btnDiv{
+    height:5rem;
+    width:100%;
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+
+.btn {
+    height: 4rem;
+    width: 6rem;
+    color: azure;
+    background-image:url("https://images.unsplash.com/photo-1461784180009-21121b2f204c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGp8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60") ;
+}

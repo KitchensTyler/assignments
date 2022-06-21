@@ -1,9 +1,9 @@
-// let arr = [1,2,3,4,5,6,7,8,9,10]
-// let newArr = arr.reduce((a,b) => a + b)
-// console.log(newArr)
+let arr = [1,2,3,4,5,6,7,8,9,10]
+let newArr = arr.reduce((a,b) => a + b)
+console.log(newArr)
 
-// let stringArr = arr.reduce((a,b) => a + ", " + b)
-// console.log(stringArr)
+let stringArr = arr.reduce((a,b) => a + ", " + b)
+console.log(stringArr)
 
 // var voters = [
 //     {name:'Bob' , age: 30, voted: true},
@@ -35,11 +35,11 @@
 // let costOf = wishlist.reduce((amount,item)=> amount + item.price,0)
 // console.log(costOf)
 
-var arrays = [
-    ["1", "2", "3"],
-    [true],
-    [4, 5, 6]
-];
+// var arrays = [
+//     ["1", "2", "3"],
+//     [true],
+//     [4, 5, 6]
+// ];
 
-let newArray = arrays.reduce((a, b) => a.concat(b))
-console.log(newArray)
+// let newArray = arrays.reduce((a, b) => a.concat(b))
+// console.log(newArray)
