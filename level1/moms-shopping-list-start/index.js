@@ -1,5 +1,7 @@
 const form = document.addItem
 
+console.log(form)
+
 form.addEventListener("submit", function(event){
     event.preventDefault()
 
