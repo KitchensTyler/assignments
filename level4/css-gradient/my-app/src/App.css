@@ -1,0 +1,49 @@
+.App {
+}
+
+.header {
+  font-family:cursive;
+  text-align: center;
+  margin: 5rem 0 1rem  0;
+}
+.body {
+  display: flex;
+  justify-content: center;
+}
+.leftBox {
+  border: solid grey 2px;
+  width:50rem;
+  height: 46rem;
+}
+.gradient {
+  display: flex;
+  border: solid lightblue 3px;
+  margin: 20px 6% 0 6% ;
+  height: 390px;
+  width: 700px;
+}
+
+.rightBox {
+  border: solid grey 2px;
+  width:50rem;
+  height: 46rem;
+}
+
+.options {
+  font-family:'Times New Roman', serif;
+  padding: 4rem;
+}
+
+textarea {
+  display: flex;
+  width:200px;
+  height:100px;
+  max-height: 240px;
+  max-width: 700px;
+  min-height: 100px;
+  min-width: 400px;
+  margin: 42px  6% 10% 6%;
+  border:1px solid black;
+  background-color: lightslategrey;
+  color: white;
+}

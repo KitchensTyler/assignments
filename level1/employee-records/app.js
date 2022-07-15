@@ -17,9 +17,10 @@ var tim = new Employee("tim", "Server", 200000, "Part Time")
 var caprise = new Employee("Caprise", "data security", 100000, "Full Time")
 // console.log(tim)
 
-employees.push(caprise, tim, bob)
-// bob.printEmployeeForm()
-// tim.printEmployeeForm()
-// caprise.printEmployeeForm()
+employees.push(Employee)
+bob.printEmployeeForm()
+tim.printEmployeeForm()
+caprise.printEmployeeForm()
 
-console.log(employees)
+
+// console.log(employees)

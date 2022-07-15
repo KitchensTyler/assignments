@@ -1,9 +1,8 @@
 var people = ["Jon", "Jacob", "Jingle", "Heimer", "Schmidt"]
 var alphabet = "abcdefghijklmnopqrstuvwxyz"
-
+ const newArr = []
 
 function foreception(people, alphabet){
-    const newArr = []
     for(var i = 0; i < people.length; i++){
             newArr.push(people[i])
             for(var j = 0; j < alphabet.length; j++)
@@ -11,6 +10,5 @@ function foreception(people, alphabet){
     }
     return newArr
 }
-// console.log(foreception(people, alphabet))
+console.log(foreception(people, alphabet))
 
-console.log(newArr)

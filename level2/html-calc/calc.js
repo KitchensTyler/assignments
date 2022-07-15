@@ -4,6 +4,7 @@ const newSubLi = document.getElementById("subList")
 const newMultLi = document.getElementById("multList")
 const subForm = document.getElementById("sub2")
 const multForm = document.getElementById("mult2")
+
 function add (num1,num2) {
     return parseInt(num1) + Number(num2)
 }

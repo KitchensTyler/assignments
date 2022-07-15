@@ -1,9 +1,9 @@
-// const arr1 = [ 1, 3, 5 ]
-// const arr2= [ 2, 4, 6 ]
-// let arr3 = [ ]
+const arr1 = [ 1, 3, 5 ]
+const arr2= [ 2, 4, 6 ]
+let arr3 = [ ]
 
-// arr3 = [...arr1, ...arr2]
-// console.log(arr3)
+arr3 = [...arr1, ...arr2]
+console.log(arr3)
 
 
 const people = [ "John", "Adam", "Amber" ]

@@ -17,4 +17,18 @@ function isDivisible(num1,num2){
       console.log("is not divisible")
     }
 }
-isDivisible(8,3)
+isDivisible(6,3)
+
+
+const arr = [3,5, 16, 27]
+
+isItHere(lettersWithStrings,"C")
+function isDivisible(num1,num2){
+    if(num1 % num2 === 0){
+        console.log("is divisible")
+    }else {
+      console.log("is not divisible")
+    }
+}
+isDivisible(6,3)
+

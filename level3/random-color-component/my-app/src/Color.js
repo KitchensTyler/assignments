@@ -13,23 +13,23 @@ useEffect(() => {
         .then(data => setColor(data.colors[0].hex))
 }, [])
 
-function getColor() {
-    const randomNumber = Math.floor(Math.random() * allColors.length)
-    const url = allColors[randomNumber].url
-    setColor(prevColor => ({
-        ...prevColor,
-        randomColor: url
-    }))
+// function getColor() {
+//     const randomNumber = Math.floor(Math.random() * allColors.length)
+//     const url = allColors[randomNumber].url
+//     setColor(prevColor => ({
+//         ...prevColor,
+//         randomColor: url
+//     }))
     
-}
+// }
 
-function handleChange(event) {
-    const {name, value} = event.target
-    setColor(prevColor => ({
-        ...prevColor,
-        [name]: value
-    }))
-}
+// function handleChange(event) {
+//     const {name, value} = event.target
+//     setColor(prevColor => ({
+//         ...prevColor,
+//         [name]: value
+//     }))
+// }
 
     return(
         console.log(color),

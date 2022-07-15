@@ -443,3 +443,6 @@ function victory(){
 while (tarnished.hp > 0 && defeated !== true){
     console.clear()
     walk()}
+
+
+   

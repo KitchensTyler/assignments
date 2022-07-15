@@ -7,7 +7,7 @@
     "nav nav nav nav"
     "sidebar1 content content sidebar2"
     "footer footer footer footer";
-    grid-gap: 1rem;
+    gap: 1rem;
 }
 nav{
     background: #a7ffeb;

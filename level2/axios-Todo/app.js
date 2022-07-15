@@ -1,16 +1,18 @@
 const todoForm = document["todo-form"]
+console.log(todoForm)
+
 function getData(){
     axios.get('https://api.vschool.io/tylerkitchens/todo')
         .then(response => listData(response.data))
         .catch(error => error)
 }
+
 getData()
 //Actually appending the API information to the DOM and adding buttons that delete and linethrough
 function listData(arr){
     clearList()
     for(let i = 0; i < arr.length; i++){
         const h1 = document.createElement('h1')
-        // let h1Text = h1.textContent
         h1.textContent = arr[i].title
         document.getElementById("todoList").appendChild(h1)
         

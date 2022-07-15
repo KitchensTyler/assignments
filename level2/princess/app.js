@@ -15,7 +15,6 @@ class player {
     this.totalCoins = totalCoins
     this.status = status
     this.hasStar = hasStar
-    
     }
     setName(namePicked){
         if (namePicked === "Luigi"){
