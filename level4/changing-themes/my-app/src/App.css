@@ -1,38 +1,82 @@
-.App {
+.container{
+  margin: 2px;
+}
+
+.topnav {
+  overflow: hidden;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.light-theme {
+  background-color: #cfcfcf;
+  color: #000;
+}
+
+.dark-theme {
+  background-color: #3a3b3c;
+  color: #fff; 
+}
+
+.footer{
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  display: fixed;
+}
+
+.main{
+  height: 82.5vh;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.light-button{
+  background-color: #cfcfcf;
+  color: #000;
+  border-color: #000;
+  width: 350px;
+  border-radius: 12px;
+  border-color: #fff;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.dark-button{
+  background-color: #3a3b3c;
+  color: #fff; 
+  width: 350px;
+  border-radius: 12px;
+  border-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .main > div{
+  background-color: red;
+} */
