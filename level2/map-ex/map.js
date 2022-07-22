@@ -20,7 +20,7 @@ let peopleFirstLetCap = people.map(name => {
     return  name.charAt(1).toUpperCase() + name.substring(2,).toLowerCase()
 })
 
-name.charAt(0)
+// name.charAt(0)
 
 // console.log(peopleFirstLetCap)
 
@@ -61,16 +61,45 @@ let oldEnoughForMovie = people1.map(a => {
 console.log(oldEnoughForMovie)
 
 
+// const form = document.getElementById('form')
 
-let newH1sAndH2s = people1.map(nameAge => {
-    let body = document.body
-    let newH1 = document.createElement("h1")
-    let newH2 = document.createElement("h2")
-    newH1.textContent = nameAge.name
-    newH2.textContent = nameAge.age
-    body.append(newH1)
-    body.append(newH2)
-})
+// let newH1sAndH2s = people1.map(nameAge => {
+//     let body = document.body
+//     let newH1 = document.createElement("h1")
+//     let newH2 = document.createElement("h2")
+//     newH1.textContent = nameAge.name
+//     newH2.textContent = nameAge.age
+//     body.append(newH1)
+//     body.append(newH2)
+// })
 
-console.log(newH1sAndH2s)
-  
+// console.log(newH1sAndH2s)
+
+function readyToPutInTheDOM(arr){
+    return arr.map((result) => {
+        return "<h1>".concat(result.name).concat("</h1>").concat("<h2>").concat(result.age).concat("</h2>")
+    })
+    
+}
+console.log(readyToPutInTheDOM([
+    {
+        name: "Angelina Jolie",
+        age: 80
+    },
+    {
+        name: "Eric Jones",
+        age: 2
+    },
+    {
+        name: "Paris Hilton",
+        age: 5
+    },
+    {
+        name: "Kayne West",
+        age: 16
+    },
+    {
+        name: "Bob Ziroll",
+        age: 100
+    }
+]));

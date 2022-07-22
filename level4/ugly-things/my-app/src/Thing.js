@@ -2,9 +2,9 @@ import React, { useState, useContext } from "react";
 import { UglyContext } from "./UglyContext";
 
 function Thing(props){
-const {title, description, imgUrl, deleteUglyThing, _id, updateUglyThing} = props
+const {title, description, imgUrl,  _id, updateUglyThing} = props
 
-const {newInput, setNewInput} = useContext(UglyContext)
+const {newInput, setNewInput, deleteUglyThing} = useContext(UglyContext)
 
 const [editMode, setEditMode] = useState(false)
 
@@ -19,10 +19,10 @@ function editThing(e){
     setEditMode(false)
 }
 
-function deleteThing(e){
-    e.preventDefault()
-    deleteUglyThing(_id)
-}
+// function deleteThing(id){
+//     deleteUglyThing(id)
+//     console.log('deleted')
+// }
 
 function handleChange(event){
     const {name, value} = event.target
@@ -38,7 +38,7 @@ return (
             <h3 className="description">{description}</h3>
                 <div className="buttonContainer">
                     <button onClick={setEditMode} className='editBtn'>Edit</button>
-                    <button onClick={deleteThing} className='deleteBtn'>Delete</button>
+                    <button onClick={() => deleteUglyThing(_id)} className='deleteBtn'>Delete</button>
                 </div>
             </div>
         }

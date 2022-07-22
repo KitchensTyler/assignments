@@ -51,6 +51,7 @@ function UglyContextProvider(props){
     // API DELETE REQUEST
 
     function deleteUglyThing(id){
+        console.log(id)
         axios.delete(`https://api.vschool.io/tylerkitchens/thing/${id}`)
             .then(res => console.log(res.data))
             .catch(err => console.log(err))
@@ -65,7 +66,7 @@ function UglyContextProvider(props){
             setThingList,
             postUglyThing,
             deleteUglyThing,
-            editUglyThing
+            editUglyThing,
         }}>
             {props.children}
             </UglyContext.Provider>
