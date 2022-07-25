@@ -14,11 +14,12 @@ const Home = (props) => {
         <div className='random-container'>
             <Link className='detail-link' to = {`/mealDetail/${props.randomMeal.idMeal}`}><h3 className="random-name">"{props.randomMeal.strMeal}"</h3></Link>
             <Link to = {`/mealDetail/${props.randomMeal.idMeal}`}><img alt = "Meal" className = "random-img" src = {props.randomMeal.strMealThumb} /></Link>
+            <br />
             <button onClick={props.getRandomMeal} className='random-btn'>Get New Meal</button>
-            {/* <button onClick={saveMeal} className='save-btn'>Save This Meal</button> */}
+            <button onClick ={()=> props.addMeal(props.randomMeal.item)}>Save</button>
         </div>
     </>
-    //have a button for saving and generating new meal.
+   
   )
 }
 

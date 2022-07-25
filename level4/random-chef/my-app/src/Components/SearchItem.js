@@ -5,6 +5,7 @@ const SearchItem = (props) => {
     <div className='search-results'>
         <h3>{props.item?.strMeal}</h3>
         <img src={props.item?.strMealThumb}/>
+        {/* <button onClick={props.saveMeal} className='save-btn'>Save This Meal</button> */}
     </div>
   )
 }
