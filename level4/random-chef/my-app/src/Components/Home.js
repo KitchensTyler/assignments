@@ -16,7 +16,7 @@ const Home = (props) => {
             <Link to = {`/mealDetail/${props.randomMeal.idMeal}`}><img alt = "Meal" className = "random-img" src = {props.randomMeal.strMealThumb} /></Link>
             <br />
             <button onClick={props.getRandomMeal} className='random-btn'>Get New Meal</button>
-            <button onClick ={()=> props.addMeal(props.randomMeal.item)}>Save</button>
+            <button onClick ={()=> props.addMeal(props.randomMeal)}>Save</button>
         </div>
     </>
    
