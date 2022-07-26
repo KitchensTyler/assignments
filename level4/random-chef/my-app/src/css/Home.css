@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+}
+ .background{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1556911073-a517e752729c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"), no-repeat center center fixed; 
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    height: 100vh;
+}
+
+.bolded-italic {
+    font-weight: 800;
+    font-style: italic;
+}
+
+.header-title {
+    font-family: 'Lora', serif;
+    color: rgb(202, 190, 6);
+    font-size: 6em;
+    text-align: center;
+    padding-top: 65px;
+}
+
+
+.random-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.detail-link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.random-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 5em;
+    font-family: 'Lora', serif;
+    color: rgb(222, 235, 222);
+}
+
+.random-name {
+    font-family: 'Lora', serif;
+    color: rgb(209, 99, 9);
+    font-size: 45px;
+}
+
+.random-img {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.btn-div-home{
+    display: flex;
+    justify-content: center;
+}
+
+.random-btn {
+    margin-top: 10px;
+    height: 75px;
+    width: 400px;
+    background-image: linear-gradient(rgb(202, 190, 6), rgb(209, 99, 9));
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.save-btn {
+    margin-top: 10px;
+    height: 75px;
+    width: 400px;
+    background-image: linear-gradient(rgb(202, 190, 6), rgb(209, 99, 9));
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+
+@media only screen and (max-width: 1280px) {
+
+    .header-title {
+        font-size: 4em;
+        padding-top: 57px;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+ .header-title {
+    font-size: 3em;
+    padding-top: 34px;
+}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .header-title {
+        font-size: 31px;
+    }
+
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .header-title {
+        font-size: 20px;
+    }
+
+    .header-description {
+        margin-top: 85px;
+    }
+
+}

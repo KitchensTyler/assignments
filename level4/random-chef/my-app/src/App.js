@@ -6,6 +6,8 @@ import axios from 'axios'
 import { Search }   from './Components/Search'
 import MealDetail from './Components/MealDetail'
 import Saved from './Components/Saved'
+import Footer from './Components/Footer'
+import "./css/App.css"
 
 
 export default function App(){
@@ -67,6 +69,7 @@ return (
         <Route path ='/search' element = {<Search searchResults={searchResults} searchMeal={searchMeal} />} />
         <Route path ='/saved' element = {<Saved savedMeal={savedMeal} addMeal={addMeal}/>} />
       </Routes>
+      <Footer />
     </>
 )
 }

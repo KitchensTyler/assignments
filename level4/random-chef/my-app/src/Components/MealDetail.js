@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
+import '../css/MealDetail.css'
 
 
 export default function MealDetail(props){
@@ -63,20 +64,22 @@ export default function MealDetail(props){
         return (
             <>
                 <div className = "title-container">
-                    <h1>Meal Details</h1>
                     <h3 className ="detail-title">"{mealDetail?.strMeal}"</h3>
                 </div>
-                <div className = "strMeal-container">
+                <div className = "meal-container">
                     <img className = "detail-img" alt = "" src = {mealDetail?.strMealThumb} />
                     <div className = "details-container">
-                    <h2 className = "detail area"><b>Meal Origin:</b> {mealDetail?.strArea}</h2>
-                    <h2 className = "detail ingredients"><b>Ingredients: </b>{mealDetail?.strIngredient?.map(ingredient => {
+                    <h2 className = "detail-area"><b>Meal Origin:</b> {mealDetail?.strArea}</h2>
+                    <h2 className = "detail-ingredients"><b>Ingredients: </b>{mealDetail?.strIngredient?.map(ingredient => {
                         return (
                             <span key = {mealDetail?.idMealstrMeal+ingredient.ingredientName}>{ingredient.ingredientMeasure}  {ingredient.ingredientName}, </span>
                         )
                     })}</h2>
-                    <h2 className = "detail instructions "><b>Instructions:</b> {mealDetail?.strInstructions}</h2>
+                    <h2 className = "detail-instructions "><b>Instructions:</b> {mealDetail?.strInstructions}</h2>
+                    <div className='button-div'>
                     <button className = "back-btn" onClick = {()=> navigate(-1)}>BACK</button>
+                    <button onClick ={()=> props.addMeal(props.randomMeal)} className='save-btn-mealD'>Save Meal</button>
+                    </div>
                 </div>
                 </div>
               

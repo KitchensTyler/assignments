@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import SearchItem from './SearchItem'
+import '../css/Search.css'
 
 
 export const Search = (props) => {
@@ -29,34 +30,53 @@ export const Search = (props) => {
        <SearchItem item={item} key={item.idMeal}/>
     )
    }) : <div className='invalid-res'> <h2> Invalid search results</h2> <ol>For Categories try: 
-     <br/> <l1>"Beef",</l1> <l1>"Breakfast",</l1> <l1>"Chicken",</l1> <l1>"Desert",</l1> <l1>"Goat",</l1> <l1>"Lamb",</l1> <l1>"Miscellaneous",</l1> <l1>"Pasta",</l1> <l1>"Pork",</l1> <l1>"Seafood",</l1>  <l1>"Side",</l1>  <l1>"Starter",</l1> <l1>"Vegan",</l1> <l1>"Vegetarian".</l1>
+     <br/> <li>"Beef",</li> <li>"Breakfast",</li> <li>"Chicken",</li> <li>"Desert",</li> <li>"Goat",</li> <li>"Lamb",</li> <li>"Miscellaneous",</li> <li>"Pasta",</li> <li>"Pork",</li> <li>"Seafood",</li>  <li>"Side",</li>  <li>"Starter",</li> <li>"Vegan",</li> <li>"Vegetarian".</li>
    </ol>
     <ol> For Areas try: <br />
-            <l1>"American",</l1> <l1>"British",</l1> <l1>"Canadian",</l1><l1>"Chinese",</l1> <l1>"Croation",</l1> <l1>"Dutch",</l1> <l1>"Egyptian",</l1> <l1>"French",</l1> <l1>"Greek",</l1> 
-            <l1>"Indian",</l1> <l1>"Irish",</l1> <l1>"Italian",</l1> <l1>"Jamaican",</l1> <l1>"Japanese",</l1> <l1>"Kenyan",</l1> <br /> <l1>"Malaysian",</l1> <l1>"Mexican",</l1> <l1>"Moroccan",</l1> <l1>"Poland",</l1> <l1>"Portuguese",</l1>
-            <l1>"Russian",</l1> <l1>"Spanish",</l1> <l1>"Thai",</l1> <l1>"Tunisian",</l1> <l1>"Turkish",</l1> <l1>"Vietnamese".</l1>
+            <li>"American",</li> <li>"British",</li> <li>"Canadian",</li><li>"Chinese",</li> <li>"Croation",</li> <li>"Dutch",</li> <li>"Egyptian",</li> <li>"French",</li> <li>"Greek",</li> 
+            <li>"Indian",</li> <li>"Irish",</li> <li>"Italian",</li> <li>"Jamaican",</li> <li>"Japanese",</li> <li>"Kenyan",</li>  <li>"Malaysian",</li> <li>"Mexican",</li> <li>"Moroccan",</li> <li>"Poland",</li> <li>"Portuguese",</li>
+            <li>"Russian",</li> <li>"Spanish",</li> <li>"Thai",</li> <li>"Tunisian",</li> <li>"Turkish",</li> <li>"Vietnamese".</li>
         </ol>
         </div>
    }
 
   return (
     <>
-    <div>
+    <div className='search-background'>
+    <div className='search-form'>
         <form onSubmit={handleSubmit}>
             <input name='term'
             value={searchTerm.term}
             onChange={handleChange}
+            className='search-input'
             />
             <select name='type'
             value={searchTerm.type}
-            onChange={handleChange}>
+            onChange={handleChange}
+            className='search-select'>
                 <option value="c">Category</option>
                 <option value="a">Area</option>
             </select>
-            <button>Search</button>
+            <button className='search-btn'>Search</button>
         </form>
     </div>
     {searchList()}
+    <div className='try-this'> 
+     <h3 className='cat-title'>For Categories try: </ h3>
+   
+    <div className='cat-response'>
+        <br />
+        <li>"Beef",</li> <li>"Breakfast",</li> <li>"Chicken",</li> <li>"Desert",</li> <li>"Goat",</li> <li>"Lamb",</li> <li>"Miscellaneous",</li> <li>"Pasta",</li> <li>"Pork",</li> <li>"Seafood",</li>  <li>"Side",</li>  <li>"Starter",</li> <li>"Vegan",</li> <li>"Vegetarian".</li>
+    </div>
+    <h3 className='area-title'> For Areas try: </h3> 
+        <div className='area-response'>
+            <br />
+            <li>"American",</li> <li>"British",</li> <li>"Canadian",</li><li>"Chinese",</li> <li>"Croation",</li> <li>"Dutch",</li> <li>"Egyptian",</li> <li>"French",</li> <li>"Greek",</li> 
+            <li>"Indian",</li> <li>"Irish",</li> <li>"Italian",</li> <li>"Jamaican",</li> <li>"Japanese",</li> <li>"Kenyan",</li> <li>"Malaysian",</li> <li>"Mexican",</li> <li>"Moroccan",</li> <li>"Poland",</li> <li>"Portuguese",</li>
+            <li>"Russian",</li> <li>"Spanish",</li> <li>"Thai",</li> <li>"Tunisian",</li> <li>"Turkish",</li> <li>"Vietnamese".</li>
+        </div>
+        </div> 
+        </div>
 </>
   )
 }

@@ -1,0 +1,241 @@
+* {
+    margin-bottom: 10px;
+    /* outline: 1px solid red; */
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.meal-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.detail-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: 'Lora', serif;
+    color: rgb(209, 99, 9);
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.detail-img {
+    width: 30%;
+    height: auto;
+    margin-left: 30px;
+    border-radius: 12px;
+    border: 4px solid rgb(6, 51, 6);
+    margin-bottom: 35px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap : 25px;
+    margin-left: 50px;
+}
+
+
+.detail-area{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 200;
+    border-bottom: 2px solid rgb(6, 51, 6);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.detail-ingredients{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 200;
+    border-bottom: 2px solid rgb(6, 51, 6);
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.detail-instructions{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    width: 100%;
+    font-weight: 200;
+    border-bottom: 2px solid rgb(6, 51, 6);
+    padding-bottom: 50px;
+    text-align: center;
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.back-btn {
+    height: 75px;
+    width: 400px;
+    background-image: linear-gradient(rgb(202, 190, 6), rgb(209, 99, 9));
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.save-btn-mealD {
+    height: 75px;
+    width: 400px;
+    background-image: linear-gradient(rgb(202, 190, 6), rgb(209, 99, 9));
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+
+    .detail-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .detail-title {
+        width: 100%;
+        margin-bottom: 75px;
+    }
+
+    .back-btn {
+        margin-top: 20px;
+    }
+    .save-btn {
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .detail-img {
+        height: 200px;
+        width: 200px;
+        margin-left: 55px;
+    }
+    
+    .detail-title {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    
+    .detail {
+        width: 87%;
+    }
+   
+    }
+    
+    @media only screen and (max-width: 800px) {
+
+        .detail-title {
+            width: 100%;
+        }
+    
+        .detail-img {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 50px;
+            margin-left: 0px;
+        }
+    
+        .meal-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+    }
+
+    @media only screen and (max-width: 500px) {
+
+        .detail-title {
+            font-size: 36px;
+            width: 100%;
+        }
+    
+    
+        .detail-img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 25px;
+            margin-left: 1px;
+        }
+    
+        .meal-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .detail {
+            font-size: 18px;
+            width: 90%;
+        }
+    
+        .back-btn {
+            margin-top: 25px;
+            height: 30px;
+            padding: 3px;
+            font-size: 17px;
+        }
+        
+        .save-btn {
+            margin-top: 25px;
+            height: 30px;
+            padding: 3px;
+            font-size: 17px;
+        }
+    
+    }
+    
+    
+    
+
+    @media only screen and (max-width: 350px) {
+
+        .detail-title {
+            font-size: 25px;
+            width: 100%;
+        }
+    
+        .detail-img {
+            width: 200px;
+            height: 200px;
+            margin-left: 40px;
+            margin-bottom: 51px;
+            margin-left: 1px;
+        }
+    
+        .meal-container {
+            flex-direction: column;
+        }
+    
+        .detail {
+            font-size: 11px;
+        }
+    
+    }
