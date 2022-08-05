@@ -4,6 +4,7 @@ import '../css/About.css'
 const About = () => {
   return (
     <>
+
     <div className='about-background'>
       <div className='about-container'>
           <h1 className='about-title'>The Random Chef</h1>
@@ -23,6 +24,7 @@ const About = () => {
                       <p>Click the Name or Image to view a detail page with ALL the details regarding the Meal</p>
       </div>
     </div>
+    
     </>
   )
 }

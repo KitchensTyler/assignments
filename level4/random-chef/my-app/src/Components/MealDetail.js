@@ -66,6 +66,7 @@ export default function MealDetail(props){
                 <div className = "title-container">
                     <h3 className ="detail-title">"{mealDetail?.strMeal}"</h3>
                 </div>
+
                 <div className = "meal-container">
                     <img className = "detail-img" alt = "" src = {mealDetail?.strMealThumb} />
                     <div className = "details-container">
@@ -85,5 +86,4 @@ export default function MealDetail(props){
               
             </>
         )
-    
 }

@@ -61,19 +61,19 @@ let oldEnoughForMovie = people1.map(a => {
 console.log(oldEnoughForMovie)
 
 
-// const form = document.getElementById('form')
+const form = document.getElementById('form')
 
-// let newH1sAndH2s = people1.map(nameAge => {
-//     let body = document.body
-//     let newH1 = document.createElement("h1")
-//     let newH2 = document.createElement("h2")
-//     newH1.textContent = nameAge.name
-//     newH2.textContent = nameAge.age
-//     body.append(newH1)
-//     body.append(newH2)
-// })
+let newH1sAndH2s = people1.map(nameAge => {
+    let body = document.body
+    let newH1 = document.createElement("h1")
+    let newH2 = document.createElement("h2")
+    newH1.textContent = nameAge.name
+    newH2.textContent = nameAge.age
+    body.append(newH1)
+    body.append(newH2)
+})
 
-// console.log(newH1sAndH2s)
+console.log(newH1sAndH2s)
 
 function readyToPutInTheDOM(arr){
     return arr.map((result) => {

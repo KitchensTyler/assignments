@@ -1,6 +1,6 @@
 // write a function (oneWordOnly) that takes an 
-function oneWordOnly(ij){
-   return ij.filter(word => !word.includes(" "))
+function oneWordOnly(ij ){
+   return ij.filter(word => !word.includes("i"))
    }
    
    console.log(oneWordOnly(["bird", "bird dog", "humming bird", "dog"])) //=>["bird", "dog"]
