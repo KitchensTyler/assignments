@@ -18,7 +18,7 @@ bountyRouter.route("/")
         const newBounty = req.body
         newBounty._id = uuidv4()
         bounties.push(newBounty)
-        res.send(`successfully added ${newBounty.fName} to the database`)
+        res.send(newBounty)
     })
 
 
