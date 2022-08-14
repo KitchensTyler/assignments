@@ -1,20 +1,23 @@
 import React, {useState, useEffect } from 'react'
 import axios from 'axios'
-import Bounty from '//components/Bounty.js'
+import Bounty from './/components/Bounty.js'
 import AddBountyForm from './/components/AddBountyForm.js'
 import "./App.css"
+
+// var heads = { crossDomain: true, "Content-Type": "application/json"}
+// axios.delete (API, data, {headers:heads})
 
 export default function App(){
   const [bounties, setBounties] = useState([])
 
     function getBounties(){
-      axios.get("/bounties")
+      axios.get("http://localhost:9000/bounties")
         .then(res => setBounties(res.data))
         .catch(err => console.log(err))
     }
 
     function addBounty(newBounty){
-      axios.post("/bounties", newBounty)
+      axios.post("http://localhost:9000/bounties", newBounty)
         .then(res => {
           setBounties(prevBounties => [...prevBounties, res.data])
         })
@@ -22,7 +25,7 @@ export default function App(){
     }
 
     function deleteBounty(bountyId){
-      axios.delete(`/bounties/${bountyId}`)
+      axios.delete(`http://localhost:9000/bounties/${bountyId}`)
         .then(res => {
           setBounties(prevBounties => prevBounties.filter(bounty => bounty._id !== bountyId))
         })
@@ -30,7 +33,7 @@ export default function App(){
     }
 
     function editBounty(updates, bountyId){
-      axios.put(`/bounties/${bountyId}`, updates)
+      axios.put(`http://localhost:9000/bounties/${bountyId}`, updates)
         .then(res => {
           setBounties(prevBounties => prevBounties.map(bounty => bounty._id !== bountyId ? bounty : res.data))
         })
@@ -52,11 +55,10 @@ export default function App(){
               bounties.map(bounty =>
                 <Bounty 
                 {...bounty}
-                key={bounty.fName}
+                key={bounty._id}
                 deleteBounty={deleteBounty}
                 editBounty={editBounty} />)
             }
-            <h1>Hello</h1>
         </div>
       </>
     )

@@ -8,7 +8,17 @@ const bounties = [
 ]
 
 
+bountyRouter.get("/:bountyId", (req, res) => {
+    const bountyId = req.params.bountyId
+    const foundBounty = bounties.find(bounty => bounties._id === bountyId)
+    res.send(foundBounty)
+})
 
+bountyRouter.get("/search/type", (req, res) => {
+    const type = req.query.type
+    const filteredBounties  = bounties.filter(bounty => bounty.type === type)
+    res.send(filteredBounties)
+})
 
 bountyRouter.route("/")
     .get((req, res) => {
@@ -28,7 +38,7 @@ bountyRouter.delete("/:bountyId", (req, res) => {
         bounties.splice(bountyIndex, 1)
         res.send('deleted')
     })
-    .put((req, res) => {
+bountyRouter.put("/:bountyId", (req, res) => {
         const bountyId = req.params.bountyId
         const updateObject = req.body
         const bountyIndex = bounties.findindex(bounty => bounty._id === bountyId)
