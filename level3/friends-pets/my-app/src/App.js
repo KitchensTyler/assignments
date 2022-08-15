@@ -1,6 +1,7 @@
 import './App.css';
 import data from './data'
 import Friend from './Friend';
+
 const friendsList = data.map((friend, index) => {
   return (
       <Friend
@@ -10,6 +11,9 @@ const friendsList = data.map((friend, index) => {
       />
   )
 }) 
+
+
+
 function App() {
   return (
     <div className="App">
