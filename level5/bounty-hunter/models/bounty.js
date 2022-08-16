@@ -3,14 +3,15 @@ const schema = mongoose.schema
 
 const bountySchema = new mongoose.Schema({
     fName: {type: String,
-            required: true}
-            ,
+            required: true},
+
     type: {
         type: String,
-        required: true
-    },
+        required: true},
+
     bounty: {type: Number,
             required: false}
+            
 })
 
 module.exports = mongoose.model("Bounty", bountySchema)

@@ -27,27 +27,41 @@ bountyRouter.get("/", (req, res, next) => { console.log("request sent")
     })
 })
     
-//     bountyRouter.post((req, res) => {
-//         const newBounty = req.body
-//         newBounty._id = uuidv4()
-//         bounties.push(newBounty)
-//         res.send(newBounty)
-//     })
+    bountyRouter.post("/", (req, res, next) => {
+     const newBounty = new Bounty(req.body)
+     newBounty.save((err, savedBounty) => {
+        if(err){
+            res.status(500)
+            return next (err)
+        }
+        return res.status(201).send(savedBounty)
+     })
+    })
 
-
-// bountyRouter.delete("/:bountyId", (req, res) => {
-//         const bountyId = req.params.bountyId
-//         const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
-//         bounties.splice(bountyIndex, 1)
-//         res.send('deleted')
-//     })
-// bountyRouter.put("/:bountyId", (req, res) => {
-//         const bountyId = req.params.bountyId
-//         const updateObject = req.body
-//         const bountyIndex = bounties.findindex(bounty => bounty._id === bountyId)
-//         const updatedBounty = Object.assign(bounties[bountyIndex], updateObject)
-//         res.send(updatedBounty)
-//     })
+bountyRouter.delete("/:bountyId", (req, res, next) => {
+     Bounty.findOneAndDelete({ _id: req.params.bountyId }, (err, deletedItem) => {
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.status(200).send('Deleted item')
+     })
+    })
+    
+bountyRouter.put("/:bountyId", (req, res, next) => {
+       Bounty.findOneAndUpdate(
+        {_id: req.params.bountyId },
+        req.body, 
+        { new : true}, 
+        (err, updatedBounty) => {
+            if(err){
+                res.status(500)
+                return next(err)
+            }
+            return res.status(201).sendUpdatedBounty
+        }
+       )
+    })
 
 
 
