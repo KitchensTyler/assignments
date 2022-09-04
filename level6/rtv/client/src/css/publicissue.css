@@ -1,0 +1,112 @@
+.issue-container{
+    display: flex;
+    justify-content: center;
+}
+
+.publicIssue{
+    display: inline-block;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: grey;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    width: 400px;
+    grid-template-rows: 100px 100px;
+    margin: 80px 80px;
+    box-shadow: 5px 5px 10px;
+}
+
+.publicIssue h2{
+    font-size: 17px;
+}
+
+
+.vote-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vote-container img{
+    margin-left: 20px;
+}
+
+.comment-button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height:20px;
+    width: 130px;
+    padding: 10px 10px;
+    border:1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(193, 55, 221);
+}
+
+.comment-button:hover{
+    background-color: rgb(129, 22, 133);
+    transition-duration: .6s;
+}
+
+.delete-button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    height:20px;
+    width: 130px;
+    padding: 10px 10px;
+    border:1px solid black;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(193, 55, 221);
+}
+
+.delete-button:hover{
+    background-color: rgb(129, 22, 133);
+    transition-duration: .6s;
+}
+
+.like-icon{
+    font-size: 100px;
+ 
+}
+
+
+.like-container{
+    margin-right: 60px;
+    padding: 15px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+}
+
+.like-container:hover{
+    background-color: rgba(180, 232, 253, 0.815);
+    transition-duration: .6s
+}
+
+.dislike-icon{
+    font-size: 100px;
+}
+
+.dislike-container{
+    margin-right: 60px;
+    padding: 15px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+}
+
+.dislike-container:hover{
+    background-color: rgba(231, 42, 9, 0.568);
+    transition-duration: .6s
+}
+
+
+.add-comment{
+    margin-right: 20px;
+}

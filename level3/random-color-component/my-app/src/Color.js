@@ -5,10 +5,10 @@ export default function Color(){
     const [color, setColor] = useState({
 })
 
-const [allColors, setAllColors] = useState([])
+
 
 useEffect(() => {
-    fetch("https://www.colr.org/json/color/random?timestamp=${new Date().getTime()}")
+    fetch(`https://www.colr.org/json/color/random?timestamp=${new Date().getTime()}`)
         .then(res => res.json())
         .then(data => setColor(data.colors[0].hex))
 }, [])

@@ -1,32 +1,32 @@
-var fruit = ["banana", "apple", "orange", "water]]melon"];
+var fruit = ["banana", "apple", "orange", "watermelon"];
 var vegetables = ["carrot", "tomato", "pepper", "lettuce"];
 
 vegetables.pop()
-// console.log(vegetables)
+console.log(vegetables)
 
 fruit.shift()
-// console.log(fruit)
+console.log(fruit)
 
 var orangeIndex = fruit.indexOf("orange")
-// console.log(orangeIndex)
+console.log(orangeIndex)
 
 fruit.push('1')
-// console.log(fruit)
+console.log(fruit)
 
 var vegLength = vegetables.length
-// console.log(vegLength)
+console.log(vegLength)
 
 vegetables.push('3')
-// console.log(vegetables)
+console.log(vegetables)
 
 var food = fruit.concat(vegetables)
-// console.log(food)
+console.log(food)
 
 var newArr = food.slice(4, 6)
 console.log(newArr)
 
 var revArr = food.reverse()
-// console.log(revArr)
+console.log(revArr)
 
-var allAtOnce = revArr.reverse().join("")
+var allAtOnce = food.join()
 console.log(allAtOnce)

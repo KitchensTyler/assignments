@@ -2,8 +2,8 @@ const form = document.addItem
 
 console.log(form)
 
-form.addEventListener("submit", function(event){
-    event.preventDefault()
+form.addEventListener("submit", function(e){
+ e.preventDefault()
 
     const title = form.title.value
     console.log(title)

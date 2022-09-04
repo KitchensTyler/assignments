@@ -1,12 +1,12 @@
-// var officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer",  "computer"]
+var officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer",  "computer"]
 
-// var count = 0;
+var count = 0;
 
-// for (var i = 0; i < officeItems.length; ++i){
-//     if(officeItems[i] == "computer")
-//         count++;
-// } 
-// console.log(count)
+for (var i = 0; i < officeItems.length; ++i){
+    if(officeItems[i] == "computer")
+        count++;
+} 
+console.log(count)
 
 
 var peopleWhoWantToSeeMadMaxFuryRoad = [
@@ -26,7 +26,7 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
       name: "Sam",
       age: 30,
       gender: "male"
-    },{]]
+    },{
       name: "Suzy",
       age: 4,
       gender: "female"

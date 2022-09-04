@@ -2,7 +2,7 @@ var header = document.querySelector("#header")
 header.innerHTML = "Java Script Made This!! <br/><span id='tyler'>Tyler</span> wrote this Java Script"
 header.style.fontSize ="50px"
 var tyler =document.getElementById('tyler')
-tyler.style.color = "burlywood"
+tyler.style.color = "red"
 
 
 var message = document.querySelector(".message")
