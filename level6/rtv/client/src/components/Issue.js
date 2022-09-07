@@ -44,22 +44,26 @@ export default function Issue(props){
     addIssueComment(_id, inputs)
   }
 
-  function handleUpvote(){
+function handleUpvote(){
     console.log('pressed')
     userAxios.put(`/api/issue/upvote/${_id}`)
     .then( res => {
         setLikesCount(res.data.likes.length)
+        setDislikesCount(res.data.dislikes.length)
     })
     .catch(err => console.log(err))
 }
 
 function handleDownVote(){
-    console.log('pressed down')
-    userAxios.put(`/api/issue/downvote/${_id}`)
-    .then( res => {
-        setDislikesCount(res.data.dislikes.length)
-    })
-    .catch(err => console.log(err))
+  console.log('pressed down')
+  userAxios.put(`/api/issue/downvote/${_id}`)
+  .then( res => {
+      console.log(dislikes.length)
+      setDislikesCount(res.data.dislikes.length)
+      setLikesCount(res.data.likes.length)
+  })
+
+  .catch(err => console.log(err))
 }
 
   return (

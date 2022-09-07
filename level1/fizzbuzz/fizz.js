@@ -4,3 +4,5 @@ for (var i = 0; i < 101; i++){
     else if(i % 5 == 0) console.log("buzz");
     else(console.log(i))
 }
+
+
