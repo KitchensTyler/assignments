@@ -312,7 +312,7 @@ function fight(creature){
         attack()
     }else if (engage === 'r'){
         runAway()
-    }
+    }if
 }
 
 function attack(){
@@ -351,7 +351,7 @@ function attack(){
                         tarnished.hp = tarnished.hp - foeAtk
                         foesAttack = 'lands a critical attack dealing ' + foeAtk + ' points of damage to you.'
                     }else{
-                        tarnished.hp = tarnished.hp - foeAtk
+                        tarnished.hp = tarnished.hp - foeAtkreadline.keyInPause()
                         foesAttack = ' attacks dealing ' + foeAtk + ' points of damage to you.'
                     }
                 }else{

@@ -65,7 +65,7 @@ issueRouter.put("/upvote/:issueId", (req, res, next) => {
 issueRouter.put("/downvote/:issueId", (req, res, next) => {
     Issue.findByIdAndUpdate(
         { _id: req.params.issueId, user: req.auth._id },
-        { $addToSet: { dislikes: req.auth._id }, $pull: { likes: req.auth._id} },
+        { $addToSet: { dislikes: req.auth._id }, $pull: {dislikes : req.auth._id}, $pull: { likes: req.auth._id} },
         { new: true},
         (err, updatedIssue) => {
             if(err){

@@ -1,12 +1,12 @@
-let Arr = [1,2,3,4,5,6,7,8,9,10]
+// let Arr = [1,2,3,4,5,6,7,8,9,10]
 
-let newArr = Arr.filter(num => num > 5)
+// let newArr = Arr.filter(num => num > 5)
 
-console.log(newArr)
+// console.log(newArr)
 
-let evenArr = Arr.filter(num => num % 2 === 0)
+// let evenArr = Arr.filter(num => num % 2 === 0)
 
-console.log(evenArr)
+// console.log(evenArr)
 
 let stringArr = ["dog", "wolf", "by", "family", "eaten", "camping"]
 
@@ -44,21 +44,21 @@ console.log(oldEnough)
 
 
 
-let animals = ["bird", "bird dog", "humming bird", "dog"]
+// let animals = ["bird", "bird dog", "humming bird", "dog"]
 
-function arrOfStrings (){
-    for (let i = 0; i < animals.length; i++){
-        for (let j = 0; j < animals[i].length; j++){
-            if (animals[i][j] === " " ){
-                console.log(animals[i])
+// function arrOfStrings (){
+//     for (let i = 0; i < animals.length; i++){
+//         for (let j = 0; j < animals[i].length; j++){
+//             if (animals[i][j] === " " ){
+//                 console.log(animals[i])
                 
-            }
-        }
-    }
-}      
+//             }
+//         }
+//     }
+// }      
 
-// arrOfStrings(animals)
+// // arrOfStrings(animals)
 
-let animalS = animals.filter(a => !a.includes(" "))
+// let animalS = animals.filter(a => !a.includes(" "))
 
-console.log(animalS)
+// console.log(animalS)

@@ -64,8 +64,7 @@ function handleDownVote(){
         console.log(dislikes.length)
         setDislikesCount(res.data.dislikes.length)
         setLikesCount(res.data.likes.length)
-    })
- 
+    }) 
     .catch(err => console.log(err))
 }
 
@@ -99,7 +98,7 @@ return(
                   <small className='public-comment-user'>{allUsers.find(u => u._id === comment.user.username)}</small>
                   <p>{comment.comment}</p><button className="delete-button"onClick={()=> {
                       if(user._id === comment.user){
-                              userAxios.delete(`api/issue/comments/${_id}/comments/${comment._id}`)
+                              userAxios.delete(`api/issue/comments/${_id}/comments/${comment?._id}`)
                               .then(res => {
                                   newGetComments(_id)
                                   alert(`Successfully deleted the comment`)

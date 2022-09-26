@@ -14,6 +14,7 @@ form.addEventListener("submit", function(e){
     
     
     document.getElementsByTagName("ul")[0].append(listItem)
+    console.log(listItem)
     let delbtn = document.createElement("button")
     delbtn.textContent = "X"
     listItem.append(delbtn)

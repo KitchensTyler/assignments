@@ -14,8 +14,8 @@ export default function MealDetail(props){
         useEffect(() => {
         axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
         .then(res => {
-          const ingredientArr = [ ]
-          const measureArr = [ ]
+          const ingredientArr = []
+          const measureArr = []
       
           for(const [key, value] of Object.entries(res.data.meals[0])){
             if (key.includes('strIngredient') && value !== ""){

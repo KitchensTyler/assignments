@@ -1,4 +1,4 @@
-const colors = ["","red", "blue", "green"]
+const colors = ["red", "blue", "green"]
 
 document.getElementById("add").addEventListener("click", function(e){
     const subItem = createSubItem(e)

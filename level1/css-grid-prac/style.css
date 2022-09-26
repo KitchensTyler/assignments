@@ -9,6 +9,7 @@
     "footer footer footer footer";
     gap: 1rem;
 }
+
 nav{
     background: #a7ffeb;
     grid-area: nav;
