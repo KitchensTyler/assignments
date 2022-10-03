@@ -312,7 +312,6 @@ function fight(creature){
         attack()
     }else if (engage === 'r'){
         runAway()
-    }if
 }
 
 function attack(){
@@ -442,7 +441,7 @@ function victory(){
 
 while (tarnished.hp > 0 && defeated !== true){
     console.clear()
-    walk()}
-
-
+    walk()
+}
+}
    

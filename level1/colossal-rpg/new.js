@@ -1,13 +1,15 @@
 const readline = require("readline-sync");
 let isAlive = true;
 //START GAME FUNCTION
+
 let startGame = () => {
     console.log(`What's up ${name}!!`)
     console.log(`Welcome to Atropia!!  A fictional landscape that stretches between the real-world borders of Russia and Iran.`)
     console.log(`Feel free to explore along the way..BUT BE AWARE... it can be dangerous!!`)
     console.log("You currently have 50 health points.  Enemies have at least 10 health points.")
     console.log(`There is a cabin and an Ale House not too far from here.. You should go get settled!`)
-};
+}
+
 const allEnemies = ["Giant Ogre", "Gruffalo", "Atropian Special Agent"]
 const treasure = ["gold necklace", "flux capacitor", "taco bell gift card", "certificate of achievement"]
 function getRandomInt(max) {

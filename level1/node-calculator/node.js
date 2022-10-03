@@ -12,7 +12,7 @@ function add(num1, num2){
 }
 
 function mul(num1, num2){
-    return (`The result is:  " + (Number(num1) * Number(num2))`)
+    return ("The result is:  " + (Number(num1) * Number(num2)))
 }
 
 function div(num1, num2){
