@@ -1,6 +1,7 @@
 console.clear()
 const readline = require('readline-sync')
 
+
 const newItem = "NEW ITEM added to inventory* "
 let tarnishedName = ""
 let tarnishedLocation = "The lands between"
@@ -282,8 +283,9 @@ function encounter(){
             let leyndellBeast = leyndellFoe[number]
             fight(leyndellBeast)
         choice()
+     }
     }
-}}
+}
 
 function choice(){
     console.clear()
@@ -421,7 +423,6 @@ function itemDrop(){
         readline.keyInPause(newItem + foeItem + ": " + foeItemDescription)
     }
 }
-
 
 
 

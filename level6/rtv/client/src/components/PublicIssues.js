@@ -7,7 +7,7 @@ import { faThumbsDown } from '@fortawesome/free-regular-svg-icons'
 
 
 export default function PublicIssues(props){
-  const {author, title, description, datePosted, _id, likes, dislikes, username, } = props
+  const {author, title, description, datePosted, _id, likes, dislikes, } = props
 
   const { userAxios, getUserIssues, user, allUsers} = useContext(UserContext)
 

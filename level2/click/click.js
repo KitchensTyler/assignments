@@ -15,9 +15,6 @@ function clicked () {
     numberOfClicks++
 }
 
-form.addEventListener("submit", event =>{
-    
-})
 
 form.addEventListener("submit", event => {
     event.preventDefault()

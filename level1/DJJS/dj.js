@@ -1,15 +1,21 @@
-document.getElementById("square").addEventListener('mouseenter', function(){
+const sqr = document.getElementById("square")
+
+sqr.addEventListener('mouseenter', function(){
     this.style.backgroundColor = "blue"
 })
+
 document.getElementById("square").addEventListener('mousedown', function(){
     this.style.backgroundColor ="red"
 })
+
 document.getElementById("square").addEventListener('mouseup', function(){
     this.style.backgroundColor ="yellow"
 })
+
 document.getElementById("square").addEventListener('dblclick', function(){
     this.style.backgroundColor ="green"
 })
+
 document.addEventListener('wheel', () => {
     document.getElementById("square").style.backgroundColor = "orange"
 })
@@ -31,3 +37,4 @@ document.addEventListener('keyup', function(event) {
         document.getElementById("square").style.backgroundColor = "orange"
     }
 });
+

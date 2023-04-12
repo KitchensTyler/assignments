@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react"
+import React, {useState, useEffect} from "react"
 import axios from "axios"
 
 const UglyContext = React.createContext()
@@ -36,6 +36,7 @@ function UglyContextProvider(props){
 
     // API EDIT REQUEST
 
+    
     function editUglyThing(id, newInput){
         let update = {
             title: newInput.title,

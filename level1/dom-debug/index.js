@@ -22,6 +22,7 @@ function createDropDown(){
 function createSubItem(e){
     const subItem = document.createElement("div")
     var subItemValue = document.getElementById("input").value;
+    console.log(subItemValue)
     subItem.textContent = subItemValue
     const dropDown = createDropDown()
     subItem.appendChild(dropDown)

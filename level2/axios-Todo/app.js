@@ -19,7 +19,7 @@ function listData(arr){
         const delBtn = document.createElement("button")
         delBtn.textContent = "Delete To-Do"
         h1.appendChild(delBtn)
-        delBtn.addEventListener('click', ()=>{
+        delBtn.addEventListener('click', () => {
             axios.delete("https://api.vschool.io/tylerkitchens/todo/" + arr[i]._id)
                 .then(getData)
         })

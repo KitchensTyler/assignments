@@ -20,6 +20,7 @@ export default function Card(props) {
     } else if (props.item.price >= 1000){
         priceTag = "$$$"
     }
+    
     return (
         <div className="card" style={{backgroundColor:backGroundColor}}>
             <div className='info'>
